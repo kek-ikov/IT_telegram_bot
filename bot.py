@@ -32,8 +32,8 @@ def start(update: Update, context: CallbackContext) -> int:
         first_run = False  # Устанавливаем флаг в False после первого запуска
 
     # Создаем клавиатуру с опциями для пользователя
-    keyboard = [['О чат-боте', 'Поиск произведения по названию', 'Поиск произведения по словам']]
-    reply_markup = ReplyKeyboardMarkup(keyboard, one_time_keyboard=True)
+    keyboard = [['О чат-боте'], ['Поиск произведения по названию'], ['Поиск произведения по словам']]
+    reply_markup = ReplyKeyboardMarkup(keyboard, one_time_keyboard=True, resize_keyboard=True)
 
     # Отправляем сообщение с просьбой выбрать опцию из меню
     update.message.reply_text("Выберите опцию:", reply_markup=reply_markup)
