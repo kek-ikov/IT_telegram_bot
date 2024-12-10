@@ -9,7 +9,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Conve
 TOKEN = '7852193453:AAFG0_6Ue65oAc0XF8cvjsTYbls7RHfGVGg'
 
 # Пути к папкам
-TEXTS_FOLDER = '/content/drive/MyDrive/IT_bot/texts'
+TEXTS_FOLDER = '/content/drive/MyDrive/IT_bot/texts' # В Colab подключил Google Drive, поэтому такие ссылки на папки
 IMAGES_FOLDER = '/content/drive/MyDrive/IT_bot/images'
 
 # Состояния разговора для управления состоянием бота
